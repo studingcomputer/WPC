@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <head>
+   <title>WEB1-CSS</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+    <div class="title-bar">
+        <button class="menu-button">&#9776;</button>
+        <h1 class="title" id="title_text">Introduce Book</h1>
+        <b><button id="night_day2" onclick="
+            const btnElement = document.getElementById('night_day2');
+            const titleElement = document.getElementById('title_text');
+            const subElement = document.getElementById('subtitle');
+            var target = document.querySelector('body');
+            var target_title = document.querySelector('#title_text');
+            if(btnElement.innerText ==='night'){
+                target.style.backgroundColor='#313131';
+                target.style.color='white';
+                btnElement.innerText='day'
+                btnElement.style.color='white';
+                titleElement.style.color='#FFFFCC';
+                subElement.style.color='lightblue';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                btnElement.innerText='night'
+                btnElement.style.color='black';
+                titleElement.style.color='black';
+                subElement.style.color='blue';
+            }" class="custom-btn btn-4"><strong>night</strong></button></b>
+    </div>
+   
+   
+  <!-- Sidebar menu -->
+    <div class="sidebar">
+        <nav id="sidebar-nav">
+            <ul>
+                <li><a href="index.html">메인 페이지</a></li>
+                <li><a href="algorithm.html">알고리즘의 역할</a></li>
+                <li><a href="basic_.html">기본적인 자료구조</a></li>
+                <li><a href="question.html">기본기를 다지는 알고리즘 문제</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+    
+        <div id="grid">
+            <div id="article">
+                <br>
+                <h2 style="color: blue;" id="subtitle">기본적인 자료구조</h2>
+                <br>
+                <br>
+                <h3 style="left:-90vh;"><strong>링크드 리스트</strong></h3>
+                <br>
+                <p>링크드 리스트는 대부분의 알고리즘에서 사용하는 자료구조다.<br>
+                프로그램 실행 중에 동적으로 새로운 노드를 삽입하거나 삭제하기가 간편하며<br>
+                링크라는 개념을 통해 물리 메모리를 연속적으로 사용하지 않아도 되므로 관리하기가 훨씬 쉽다.</p>
+                <img src="imgs/algorithm_1.png" alt="linked_list" width="40%" height="40%">
+                <br>
+                <h3 style="left:-90vh;"><strong>스택(stack)</strong></h3>
+                <br>
+                <p><strong>'입력과 출력을 한 방향으로 제한한 자료구조'.</strong><br>
+                데이터에 순서를 적용해 차례로 저장한 뒤, 가장 최신 데이터부터 차례로 가져온다.<br>
+                구현 난이도가 낮으며, 이러한 알고리즘은 이후 배우는 객체지향적 프로그래밍에 잦게 사용된다.</p>
+                <img src="imgs/algorithm_2.png" alt="linked_list" width="20%" height="20%">
+            </div>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+ </body>
+</html>

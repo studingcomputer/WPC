@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <head>
+   <title>WEB1-CSS</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+    <div class="title-bar">
+        <button class="menu-button">&#9776;</button>
+        <h1 class="title" id="title_text">Introduce Book</h1>
+        <b><button id="night_day2" onclick="
+            const btnElement = document.getElementById('night_day2');
+            const titleElement = document.getElementById('title_text');
+            const subElement = document.getElementById('subtitle');
+            var target = document.querySelector('body');
+            var target_title = document.querySelector('#title_text');
+            if(btnElement.innerText ==='night'){
+                target.style.backgroundColor='#313131';
+                target.style.color='white';
+                btnElement.innerText='day'
+                btnElement.style.color='white';
+                titleElement.style.color='#FFFFCC';
+                subElement.style.color='lightblue';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                btnElement.innerText='night'
+                btnElement.style.color='black';
+                titleElement.style.color='black';
+                subElement.style.color='blue';
+            }" class="custom-btn btn-4"><strong>night</strong></button></b>
+    </div>
+   
+   
+  <!-- Sidebar menu -->
+    <div class="sidebar">
+        <nav id="sidebar-nav">
+            <ul>
+                <li><a href="index.html">메인 페이지</a></li>
+                <li><a href="algorithm.html">알고리즘의 역할</a></li>
+                <li><a href="basic_.html">기본적인 자료구조</a></li>
+                <li><a href="question.html">기본기를 다지는 알고리즘 문제</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+    
+        <div id="grid">
+            <div id="article">
+                <br>
+                <h2 style="color: blue;" id="subtitle">기본기를 다지는 알고리즘 문제</h2>
+                <br>
+                <br>
+                <h3 style="left:-90vh;"><strong>탐욕 알고리즘</strong></h3>
+                <br>
+                <p>최신 핸드폰의 메모리 공간에 최대한 앱을 탑재하고 앱이 처음 실행되는 데<br>
+                    총 소요 시간이 얼마나 되는지를 확인하는 일이다.<br>
+                이 알고리즘 문제의 목적은 여러가지 앱을 탑재했을 때 앱 각각의 실행 시간이 최소가 되어야 한다는 것이다.<br><br>
+                또한 앱 각각은 여러 번 실행될 수 있다. 예를 들자면 2개의 전화번호부 앱이 동시에 실행되어 메모리 공간을 차지할 수 있다는 것이다.</p>
+                <br><br><br><br>
+                <h3 style="left:-90vh;"><strong>세포의 자가 증식 프로젝트</strong></h3>
+                <br>
+                <p>줄기 세포는 자기 증식 기능이 있다.<br>
+                알파 세포는 세포 증식 시 일정한 규칙을 통해 DNA 정보를 변경시킨다.<br><br>
+                이러한 시각적 규칙을 통해,<br>
+                임의의 DNA 패턴이 주어지면 진화의 가장 최상위 단계에 있는 세포의 DNA 패턴을 찾아내는 프로그램을 작성하시오.</p>
+                <br><br><br>
+                <p>실제 문제와 조건, 해답 등은 책을 참고하세요.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+ </body>
+</html>

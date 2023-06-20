@@ -1,0 +1,158 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Title bar styles */
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+}
+.title-bar h1 {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #000000;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-button {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  transform: scale( 1.2 );
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -40vh;
+  height: 100vh;
+  width: 40vh;
+  background-color: rgba(58, 58, 58, 0.774);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar.show {
+  transform: translateX(40vh);
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: #a3aae9;
+}
+
+.sidebar nav {
+  margin-top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+.content {
+  text-align: center;
+}
+
+.frame{
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom-btn {
+  width: 60px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-4 {
+  position: relative;
+  color: #000;
+  z-index: 2;
+  line-height: 40px;
+  padding: 0;
+}
+.btn-4:hover{
+  border: none;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  top: 0;
+   left: 0;
+   border-bottom-color: transparent;
+   border-right-color: transparent;
+   border-top-color: #000;
+   border-left-color: #000;
+}
+.btn-4:after{
+   bottom: 0;
+   right: 0;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   border-bottom-color: #000;
+   border-right-color: #000;
+}
+.btn-4:hover:before,
+.btn-4:hover:after {
+  border-color: #000;
+  height: 100%;
+  width: 100%;
+}

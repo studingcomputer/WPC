@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <head>
+   <title>WEB1-CSS</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+    <div class="title-bar">
+        <button class="menu-button">&#9776;</button>
+        <h1 class="title" id="title_text">Introduce Book</h1>
+        <b><button id="night_day2" onclick="
+            const btnElement = document.getElementById('night_day2');
+            const titleElement = document.getElementById('title_text');
+            const subElement = document.getElementById('subtitle');
+            var target = document.querySelector('body');
+            var target_title = document.querySelector('#title_text');
+            if(btnElement.innerText ==='night'){
+                target.style.backgroundColor='#313131';
+                target.style.color='white';
+                btnElement.innerText='day'
+                btnElement.style.color='white';
+                titleElement.style.color='#FFFFCC';
+                subElement.style.color='lightblue';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                btnElement.innerText='night'
+                btnElement.style.color='black';
+                titleElement.style.color='black';
+                subElement.style.color='blue';
+            }" class="custom-btn btn-4"><strong>night</strong></button></b>
+    </div>
+   
+  <!-- Sidebar menu -->
+    <div class="sidebar">
+        <nav id="sidebar-nav">
+            <ul>
+                <li><a href="index.html">메인 페이지</a></li>
+                <li><a href="algorithm.html">알고리즘의 역할</a></li>
+                <li><a href="basic_.html">기본적인 자료구조</a></li>
+                <li><a href="question.html">기본기를 다지는 알고리즘 문제</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+    
+        <div id="grid">
+            <div id="article">
+            <br>
+            <h2 style="color: blue;" id="subtitle">알고리즘 문제 풀이 전략</h2>
+            <br>
+            <br>
+            <div style="display:inline-block; vertical-align:top;">
+                <img src="imgs/main.png" alt="none" width="100%" height="100%">
+            </div>
+            <div style="display:inline-block; font-size:120%">
+                <br>
+                <p>이 책은 세상에 나와 있는 모든 알고리즘을<br>
+                다루지 않는다.<br><br>
+                하지만 다양한 문제들을 머릿속에서 체계적으로 구조화해<br>
+                문제를 해결하는 데 필요한 핵심적인 알고리즘과 자료구조를<br>
+                소개한다.<br><br>
+                이 책을 통해 알고리즘을 공부하면서<br>
+                '알고리즘 문제를 풀 때 어떤 접근법을 취해야 하는지'<br>
+                '어떤 자료구조를 사용해야 하는지'를<br>
+                배울 수 있을 것이다.</p>
+            </div></div>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+ </body>
+</html>
